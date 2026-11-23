@@ -1,0 +1,30 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+build/
+coverage/
+npm-debug.log*
+
+# Runtime uploads and local databases
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.sqlite
+*.db
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
