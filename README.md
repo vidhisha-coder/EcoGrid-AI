@@ -195,3 +195,55 @@ comments        — Discussion on reports
 3. Open http://localhost:3000
 
 The project ZIP intentionally excludes `.env`, Python virtual environments, `node_modules`, and generated cache files. Create your local `.env` from `.env.example` and install dependencies after extracting.
+
+## 🎯 Problem Focus
+
+EcoGrid AI focuses on **AI-powered environmental issue reporting and community action**. It helps citizens identify and report issues such as improper waste disposal, garbage accumulation, and other visible environmental concerns.
+
+The goal is to make environmental reporting easier, more structured, and actionable through AI-assisted image analysis and community collaboration.
+
+## 🧠 AI Approach & Decision Logic
+
+EcoGrid AI integrates Google Gemini Vision to analyze images uploaded with environmental reports.
+
+The AI-assisted workflow:
+
+1. A user uploads an image of an environmental concern.
+2. Gemini Vision analyzes the visible content.
+3. The system generates an environmental issue classification, priority/severity assessment, and recommendations.
+4. The analysis is presented to the user to support report submission and follow-up.
+5. Reports can be tracked through the platform, supporting community and administrative action.
+
+The AI assists with image-based assessment; it does not replace human verification or official environmental inspections.
+
+## ⚙️ How the Solution Works
+
+- **User authentication:** Citizens can register and log in.
+- **Report submission:** Users submit environmental concerns with images and location details.
+- **AI image analysis:** Gemini Vision helps classify the reported issue and assess its priority.
+- **Community collaboration:** Users can view reports and participate through available platform interactions.
+- **Report tracking:** Report status and administrative workflows help monitor reported issues.
+- **Analytics and maps:** Dashboard analytics and map views help users understand reported environmental concerns.
+
+## 📌 Assumptions & Limitations
+
+- AI analysis depends on the quality, clarity, and relevance of uploaded images.
+- Image-based predictions may be incomplete or inaccurate and should be reviewed by humans.
+- The system analyzes submitted images; it does not continuously monitor the environment.
+- Location accuracy depends on the information provided by the user.
+- Gemini Vision requires a valid API key and network connectivity.
+- The platform is intended to support environmental awareness and reporting, not replace government authorities or professional environmental assessments.
+
+## 🧪 Testing & Deployment
+
+- Frontend and backend are deployed on Render.
+- Backend API health and authentication have been tested.
+- The report submission and Gemini image-analysis workflow have been tested.
+- The public source code is available in the GitHub repository.
+
+## 🔗 Project Links
+
+- **GitHub Repository:** https://github.com/vidhisha-coder/EcoGrid-AI
+- **Live Application:** https://ecogrid-ai-frontend.onrender.com
+- **Backend API:** https://ecogrid-ai-backend-ji1l.onrender.com
+
